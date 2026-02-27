@@ -1,6 +1,6 @@
-# Granite Agent Workshop
+# Building Agents with Granite Workshop
 
-This is the Granite Agent workshop hosted on GitHub Pages using Material for MkDocs. To view it online, go to:
+This is the Building Agents with Granite Workshop hosted on GitHub Pages using Material for MkDocs. To view it online, go to:
 
 <https://ibm-granite-community.github.io/granite-agent-workshop>
 

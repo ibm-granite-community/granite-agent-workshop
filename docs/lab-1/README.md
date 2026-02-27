@@ -1,5 +1,5 @@
 ---
-title: Granite Agent Workshop Lab 1
+title: Building Agents with Granite Workshop Lab 1
 description: Function Calling Agent
 logo: images/ibm-blue-background.png
 ---

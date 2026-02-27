@@ -1,5 +1,5 @@
 ---
-title: Granite Agent Workshop Lab 5
+title: Building Agents with Granite Workshop Lab 5
 description: ReAct/Reasoning Agent
 logo: images/ibm-blue-background.png
 ---

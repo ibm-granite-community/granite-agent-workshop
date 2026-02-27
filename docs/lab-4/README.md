@@ -1,5 +1,5 @@
 ---
-title: Granite Agent Workshop Lab 4
+title: Building Agents with Granite Workshop Lab 4
 description: ToolRAG Agent
 logo: images/ibm-blue-background.png
 ---

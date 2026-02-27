@@ -1,5 +1,5 @@
 ---
-title: Granite Agent Workshop
+title: Building Agents with Granite Workshop
 description: Learn about building agents with Granite AI Models
 logo: images/ibm-blue-background.png
 ---

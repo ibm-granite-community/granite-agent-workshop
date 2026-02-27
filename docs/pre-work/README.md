@@ -1,6 +1,6 @@
 ---
-title: Granite Agent Workshop Pre-work
-description: Preparation for the Granite Agent Workshop
+title: Building Agents with Granite Workshop Pre-work
+description: Preparation for the Building Agents with Granite Workshop
 logo: images/ibm-blue-background.png
 ---
 

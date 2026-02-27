@@ -1,5 +1,5 @@
 ---
-title: Granite Agent Workshop Lab 3
+title: Building Agents with Granite Workshop Lab 3
 description: Route-and-Solve Agent
 logo: images/ibm-blue-background.png
 ---
