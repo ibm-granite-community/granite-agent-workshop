@@ -1,5 +1,5 @@
 ---
-title: Building Agents with Granite Workshop Lab 3
+title: Lab 3. Route-and-Solve Agent
 description: Route-and-Solve Agent
 logo: images/ibm-blue-background.png
 notebook: notebooks/Route_and_Solve_Agent.ipynb

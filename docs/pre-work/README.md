@@ -1,5 +1,5 @@
 ---
-title: Building Agents with Granite Workshop Pre-work
+title: Lab 0. Pre-work
 description: Preparation for the Building Agents with Granite Workshop
 logo: images/ibm-blue-background.png
 ---

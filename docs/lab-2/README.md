@@ -1,5 +1,5 @@
 ---
-title: Building Agents with Granite Workshop Lab 2
+title: Lab 2. Plan-and-Solve Agent
 description: Plan-and-Solve Agent
 logo: images/ibm-blue-background.png
 notebook: notebooks/Plan_Solve_Agent.ipynb
