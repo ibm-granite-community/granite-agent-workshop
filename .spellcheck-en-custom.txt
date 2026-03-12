@@ -28,6 +28,7 @@ Sylvain
 toolset
 TPU
 url
+uv
 venv
 VRAM
 Witherspoon

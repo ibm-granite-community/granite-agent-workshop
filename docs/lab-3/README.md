@@ -24,7 +24,9 @@ This approach can be thought of as a Router which routes to multiple function ca
 
 This approach is effective when there is a natural clustering of tools which can be applied to the complete toolkit.
 
-*For example, if your agent has tools that interact with the Internet, a Database and Email, you may define a sub-agent for each of these.*
+/// example
+If your agent has tools that interact with the Internet, a Database and Email, you may define a sub-agent for each of these.
+///
 
 This approach also improves performance when there may be a large set of tools available. Since each sub-agent only chooses from a subset of the tools, it is less likely to select an incorrect tool if the Router has effectively done its job.
 

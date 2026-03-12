@@ -38,7 +38,7 @@ theme:
   icon:
     logo: material/library
   logo: images/ibm-blue-background.png
-  favicon: images/favicon.ico
+  favicon: images/ibm-blue-background.png
   features:
     - navigation.tabs
     - navigation.footer
@@ -77,17 +77,33 @@ extra:
 # Extensions
 markdown_extensions:
   - abbr
-  - admonition
   - attr_list
   - def_list
   - footnotes
   - meta
+  - tables
   - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.tab:
+      alternate_style: true
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
@@ -106,8 +122,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

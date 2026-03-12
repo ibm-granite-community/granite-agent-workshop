@@ -9,6 +9,8 @@ logo: images/ibm-blue-background.png
 Welcome to our workshop! In this workshop we'll be using the open-sourced [IBM Granite
 AI foundation models](https://www.ibm.com/granite) to develop [AI agents](https://www.ibm.com/think/topics/ai-agents).
 
+An AI agent is an autonomous software system powered by large language models (LLMs) that perceives its environment, reasons, plans, and takes actions using external tools to achieve specific goals with little to no human supervision.
+
 By the end of this workshop, you will learn about:
 
 ### Function Calling Agents
@@ -50,7 +52,7 @@ The introductory page of the workshop is broken down into the following sections
 
 ### Agenda
 
-| | |
+| Lab | Description |
 | :--- | :--- |
 | [Lab 0: Pre-work](pre-work/README.md) | Pre-work for the workshop |
 | [Lab 1: Function Calling Agent](lab-1/README.md) | Build a simple function calling agent with Granite |
@@ -61,7 +63,7 @@ The introductory page of the workshop is broken down into the following sections
 
 ### Technology Used
 
-The technology used in the workshop is as follows:
+The following technology is used in the workshop:
 
 * [Google Colab](https://colab.research.google.com)
 * [IBM Granite AI foundation models](https://www.ibm.com/granite)

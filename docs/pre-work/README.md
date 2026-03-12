@@ -64,14 +64,27 @@ cd granite-agent-workshop
 
 ### Install Jupyter
 
-!!! note "Use a virtual environment"
-    Before installing dependencies and to avoid conflicts in your environment, it is advisable to use a [virtual environment (venv)](https://docs.python.org/3/library/venv.html).
+/// note | Use a virtual environment
+Before installing dependencies and to avoid conflicts in your environment, it is advisable to use a [virtual environment (venv)](https://docs.python.org/3/library/venv.html).
+///
 
 1. Create virtual environment:
+
+    /// tab | venv
 
     ```shell
     python3 -m venv --upgrade-deps --clear venv
     ```
+
+    ///
+
+    /// tab | uv
+
+    ```shell
+    uv venv --clear --seed venv
+    ```
+
+    ///
 
 1. Activate the virtual environment by running:
 
@@ -81,9 +94,21 @@ cd granite-agent-workshop
 
 1. Install Jupyter notebook in the virtual environment:
 
+    /// tab | venv
+
     ```shell
     python3 -m pip install --require-virtualenv notebook ipywidgets
     ```
+
+    ///
+
+    /// tab | uv
+
+    ```shell
+    uv pip install notebook ipywidgets
+    ```
+
+    ///
 
     For more information, see the [Jupyter installation instructions](https://jupyter.org/install)
 
@@ -100,11 +125,13 @@ Running the lab notebooks remotely using [Google Colab](https://colab.research.g
 - [Colab Prerequisites](#colab-prerequisites)
 - [Serving the Granite AI Models for Colab](#serving-the-granite-ai-models-for-colab)
 
-!!! note "Notebook execution speed tip" The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime->Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
+/// tip | Notebook execution speed tip
+The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime->Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
+///
 
 ### Colab Prerequisites
 
-- [Google Colab](https://colab.research.google.com) requires a Google account that you're logged into
+- [Google Colab](https://colab.research.google.com) requires a Google account that you're logged into.
 
 ### Serving the Granite AI Models for Colab
 
@@ -136,7 +163,7 @@ Ollama is a lightweight tool for running LLMs locally from the command line.
     ollama pull ibm/granite4:micro
     ```
 
-3. Ollama runs automatically and exposes an OpenAI-compatible API at `http://localhost:11434`
+3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
 ### Hardware Recommendations
 
@@ -148,5 +175,6 @@ For the best local inference experience:
 | GPU VRAM | - | 4+ GB |
 | Storage | 10 GB free | 20+ GB free |
 
-!!! tip "Apple Silicon"
-    If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
+/// tip | Apple Silicon
+If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
+///
