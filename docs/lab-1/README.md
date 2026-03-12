@@ -28,7 +28,10 @@ The flow for an FC Agent is:
 5. Repeat step 3 until a final answer is received.
 
 ![FC Agent Flow Example](../images/fc_agent_flow_example.png)
-*FC Agent Flow Example*
+
+/// caption
+FC Agent Flow Example
+///
 
 /// info | Tool execution
 A common misconception is that the LLM underlying the Agent is able to execute tools, when in fact the LLM is only selecting a tool and the tool parameters to execute based on the query. The tool execution is performed by the program supplementing the LLM invocations.
