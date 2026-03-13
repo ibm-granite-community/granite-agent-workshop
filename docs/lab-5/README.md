@@ -1,7 +1,8 @@
 ---
-title: Building Agents with Granite Workshop Lab 5
+title: Lab 5. ReAct Agent
 description: ReAct/Reasoning Agent
 logo: images/ibm-blue-background.png
+notebook: notebooks/ReAct_Agent.ipynb
 ---
 
 # ReAct/Reasoning Agent
@@ -36,13 +37,13 @@ This lab is a [Jupyter notebook](https://jupyter.org/). Please follow the instru
 
 ## Lab
 
-[![# ReACT/Reasoning Agent](https://badgen.net/badge/icon/github?icon=github&label=View%20on "View on GitHub")]({{ config.repo_url }}/blob/{{ git.commit }}/notebooks/ReAct_Agent.ipynb){:target="_blank"}
-[![# ReACT/Reasoning Agent](https://colab.research.google.com/assets/colab-badge.svg "Open In Colab")]({{ extra.colab_url }}/blob/{{ git.commit }}/notebooks/ReAct_Agent.ipynb){:target="_blank"}
+[![# ReACT/Reasoning Agent](https://badgen.net/badge/icon/github?icon=github&label=View%20on "View on GitHub")]({{ config.repo_url }}/blob/{{ git.commit }}/{{ notebook }}){:target="_blank"}
+[![# ReACT/Reasoning Agent](https://colab.research.google.com/assets/colab-badge.svg "Open In Colab")]({{ extra.colab_url }}/blob/{{ git.commit }}/{{ notebook }}){:target="_blank"}
 
 To run the notebook from your command line in Jupyter using the active virtual environment from the [pre-work](../pre-work/README.md#install-jupyter), run:
 
 ```shell
-jupyter notebook notebooks/ReAct_Agent.ipynb
+jupyter notebook {{ notebook }}
 ```
 
 The path of the notebook file above is relative to the `granite-agent-workshop` folder from the git clone in the [pre-work](../pre-work/README.md#clone-the-workshop-repository).

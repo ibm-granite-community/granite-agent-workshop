@@ -1,5 +1,5 @@
 ---
-title: Building Agents with Granite Workshop
+title: About the workshop
 description: Learn about building agents with Granite AI Models
 logo: images/ibm-blue-background.png
 ---
@@ -54,12 +54,12 @@ The introductory page of the workshop is broken down into the following sections
 
 | Lab | Description |
 | :--- | :--- |
-| [Lab 0: Pre-work](pre-work/README.md) | Pre-work for the workshop |
-| [Lab 1: Function Calling Agent](lab-1/README.md) | Build a simple function calling agent with Granite |
-| [Lab 2: Plan-and-Solve Agent](lab-2/README.md) | Build a plan-and-solve agent with Granite |
-| [Lab 3: Route-and-Solve Agent](lab-3/README.md) | Build a route-and-solve agent with Granite |
-| [Lab 4: ToolRAG Agent](lab-4/README.md) | Build a tool RAG agent with Granite. |
-| [Lab 5: ReAct Agent](lab-5/README.md) | Build a ReAct agent with Granite |
+| [Lab 0. Pre-work](pre-work/README.md) | Pre-work for the workshop |
+| [Lab 1. Function Calling Agent](lab-1/README.md) | Build a simple function calling agent with Granite |
+| [Lab 2. Plan-and-Solve Agent](lab-2/README.md) | Build a plan-and-solve agent with Granite |
+| [Lab 3. Route-and-Solve Agent](lab-3/README.md) | Build a route-and-solve agent with Granite |
+| [Lab 4. ToolRAG Agent](lab-4/README.md) | Build a tool RAG agent with Granite. |
+| [Lab 5. ReAct Agent](lab-5/README.md) | Build a ReAct agent with Granite |
 
 ### Technology Used
 

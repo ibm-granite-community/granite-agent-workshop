@@ -1,7 +1,8 @@
 ---
-title: Building Agents with Granite Workshop Lab 2
+title: Lab 2. Plan-and-Solve Agent
 description: Plan-and-Solve Agent
 logo: images/ibm-blue-background.png
+notebook: notebooks/Plan_Solve_Agent.ipynb
 ---
 
 # Plan-and-Solve Agent
@@ -40,13 +41,13 @@ This lab is a [Jupyter notebook](https://jupyter.org/). Please follow the instru
 
 ## Lab
 
-[![# Plan-and-Solve Agent](https://badgen.net/badge/icon/github?icon=github&label=View%20on "View on GitHub")]({{ config.repo_url }}/blob/{{ git.commit }}/notebooks/Plan_Solve_Agent.ipynb){:target="_blank"}
-[![# Plan-and-Solve Agent](https://colab.research.google.com/assets/colab-badge.svg "Open In Colab")]({{ extra.colab_url }}/blob/{{ git.commit }}/notebooks/Plan_Solve_Agent.ipynb){:target="_blank"}
+[![# Plan-and-Solve Agent](https://badgen.net/badge/icon/github?icon=github&label=View%20on "View on GitHub")]({{ config.repo_url }}/blob/{{ git.commit }}/{{ notebook }}){:target="_blank"}
+[![# Plan-and-Solve Agent](https://colab.research.google.com/assets/colab-badge.svg "Open In Colab")]({{ extra.colab_url }}/blob/{{ git.commit }}/{{ notebook }}){:target="_blank"}
 
 To run the notebook from your command line in Jupyter using the active virtual environment from the [pre-work](../pre-work/README.md#install-jupyter), run:
 
 ```shell
-jupyter notebook notebooks/Plan_Solve_Agent.ipynb
+jupyter notebook {{ notebook }}
 ```
 
 The path of the notebook file above is relative to the `granite-agent-workshop` folder from the git clone in the [pre-work](../pre-work/README.md#clone-the-workshop-repository).
