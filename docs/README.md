@@ -79,4 +79,4 @@ The following technology is used in the workshop:
 * [Jacques-Sylvain Lecointre](https://github.com/jslecointre)
 * [Aditya Gidh](https://github.com/adigidh)
 * [Shonda Witherspoon](https://github.com/swith004)
-* The notebooks used in this workshop are versions of notebooks from the [IBM Granite Community](https://github.com/ibm-granite-community) modified for the workshop needs
+* The notebooks used in this workshop are versions of notebooks from the [Granite Agent Cookbook](https://github.com/ibm-granite-community/granite-agent-cookbook) modified for the workshop needs
