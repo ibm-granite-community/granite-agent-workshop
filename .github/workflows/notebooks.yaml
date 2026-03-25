@@ -89,7 +89,7 @@ jobs:
       - test_workflow_ready
     permissions:
       contents: read
-    uses: ibm-granite-community/utils/.github/workflows/test_notebook.yaml@main
+    uses: ibm-granite-community/utils/.github/workflows/test_notebook.yaml@main  # zizmor: ignore[unpinned-uses]
     secrets:
       REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
     with:
@@ -106,7 +106,7 @@ jobs:
       - test_workflow_ready
     permissions:
       contents: read
-    uses: ibm-granite-community/utils/.github/workflows/test_notebook.yaml@main
+    uses: ibm-granite-community/utils/.github/workflows/test_notebook.yaml@main  # zizmor: ignore[unpinned-uses]
     with:
       notebook-lists: |
         .github/notebook_lists/ollama_notebooks.txt
