@@ -11,8 +11,8 @@ on:
       - 'data/**'
       - 'docs/**'
       - 'notebooks/**'
-      - 'mkdocs.yml'
-      - '.github/workflows/publish.yaml' # This workflow
+      - 'mkdocs.ya?ml'
+      - '.github/workflows/publish.ya?ml' # This workflow
   workflow_dispatch:
 
 env:

@@ -16,14 +16,14 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/notebooks.yaml' # This workflow
+      - '.github/workflows/notebooks.ya?ml' # This workflow
       - '.github/notebook_lists/*' # Notebook lists
       - 'notebooks/**/*.ipynb'
   pull_request:
     branches:
       - main
     paths:
-      - '.github/workflows/notebooks.yaml' # This workflow
+      - '.github/workflows/notebooks.ya?ml' # This workflow
       - '.github/notebook_lists/*' # Notebook lists
       - 'notebooks/**/*.ipynb'
 

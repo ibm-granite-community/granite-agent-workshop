@@ -6,8 +6,8 @@ on:
       - main
     paths:
       - '**.md'
-      - '.markdownlint-cli2.yaml'
-      - '.github/workflows/lint.yaml' # This workflow
+      - '.markdownlint-cli2.ya?ml'
+      - '.github/workflows/lint.ya?ml' # This workflow
 
 env:
   LC_ALL: en_US.UTF-8
