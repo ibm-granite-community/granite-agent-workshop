@@ -81,7 +81,6 @@ Ollama is a lightweight tool for running LLMs locally from the command line.
 
 3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
-
 ### Install Jupyter
 
 /// note | Use a virtual environment
