@@ -6,16 +6,14 @@ logo: images/ibm-blue-background.png
 
 # Pre-work
 
-The labs in the workshop are [Jupyter notebooks](https://jupyter.org/). The notebooks can be run on your computer or remotely on the [Google Colab](https://colab.research.google.com) service. Check out [Running the Notebooks](#running-the-notebooks) section on how to setup the way you want to run the notebooks.
+The labs in the workshop are [Jupyter notebooks](https://jupyter.org/). The notebooks can be run on your computer or remotely on the [Google Colab](https://colab.research.google.com) service.
 
-## Running the Notebooks
+# Running the Notebooks
 
-The notebooks can be run:
+Follow the instructions corresponding to how you want to run the notebooks:
 
 - [Locally on your computer](#running-the-notebooks-locally) OR
 - [Remotely on the Google Colab service](#running-the-notebooks-remotely-colab)
-
-Follow the instructions in one of the sections that follow on how you would like to run the notebooks.
 
 ## Running the Notebooks Locally
 
@@ -29,6 +27,7 @@ If not, then it recommended to go to the [Running the Notebooks Remotely (Colab)
 Running the lab notebooks locally on your computer requires the following steps:
 
 - [Local Prerequisites](#local-prerequisites)
+- [Serving the Granite AI Models for locally run Notebooks](#serving-the-granite-ai-models-for-locally-run-notebooks)
 - [Clone the Workshop Repository](#clone-the-workshop-repository)
 - [Install Jupyter](#install-jupyter)
 
@@ -46,6 +45,10 @@ git clone https://github.com/ibm-granite-community/granite-agent-workshop.git
 cd granite-agent-workshop
 ```
 
+### Serving the Granite AI Models for locally run Notebooks
+
+The labs require Granite models to be served by an AI model runtime so that the models can be invoked or called. The following sections provide instructions to either run the models in the cloud using [Replicate](https://replicate.com/) or locally using [Ollama](https://ollama.com/).
+
 #### Replicate AI Cloud Platform
 
 [Replicate](https://replicate.com/) is a cloud platform that will host and serve AI models for you.
@@ -61,6 +64,22 @@ cd granite-agent-workshop
     ```shell
     export REPLICATE_API_TOKEN=<your_replicate_api_token>
     ```
+
+#### Local Model Inference with Ollama
+
+If you want to run the AI models locally on your computer, you can use [Ollama](https://ollama.com/).
+
+Ollama is a lightweight tool for running LLMs locally from the command line.
+
+1. Download and install [Ollama](https://ollama.com/download) for your platform.
+
+2. Pull the Granite model:
+
+    ```shell
+    ollama pull ibm/granite4:micro
+    ```
+
+3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
 ### Install Jupyter
 
@@ -148,22 +167,6 @@ The labs require Granite models to be served by an AI model runtime so that the 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
 1. Add your Replicate API Token to the Colab Secrets manager to securely store it. Open [Google Colab](https://colab.research.google.com) and click on the 🔑 Secrets tab in the left panel. Click "New Secret" and enter `REPLICATE_API_TOKEN` as the key, and paste your token into the value field. Toggle the button on the left to allow notebook access to the secret.
-
-## Local Model Inference Option
-
-If you want to run the AI models locally on your computer, you can use [Ollama](https://ollama.com/).
-
-Ollama is a lightweight tool for running LLMs locally from the command line.
-
-1. Download and install [Ollama](https://ollama.com/download) for your platform.
-
-2. Pull the Granite model:
-
-    ```shell
-    ollama pull ibm/granite4:micro
-    ```
-
-3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
 ### Hardware Recommendations
 
