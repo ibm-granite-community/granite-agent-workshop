@@ -156,10 +156,6 @@ Running the lab notebooks remotely using [Google Colab](https://colab.research.g
 - [Colab Prerequisites](#colab-prerequisites)
 - [Serving the Granite AI Models for Colab](#serving-the-granite-ai-models-for-colab)
 
-/// tip | Notebook execution speed tip
-The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime->Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
-///
-
 ### Colab Prerequisites
 
 - [Google Colab](https://colab.research.google.com) requires a Google account that you're logged into.
