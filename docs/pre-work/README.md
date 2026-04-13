@@ -55,7 +55,7 @@ The labs require Granite models to be served by an AI model runtime so that the 
 
 1. Create a [Replicate](https://replicate.com/) account. You will need a [GitHub](https://github.com/) account to do this.
 
-1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the models on the Replicate platform, use [this link](https://replicate.com/invites/a8717bfe-2f3d-4a52-88ed-1356231cdf03) to add a small amount of credit to your Replicate account.
+1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the models on the Replicate platform, use [this link](https://replicate.fyi/ibm) to add a small amount of credit to your Replicate account.
 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
@@ -162,7 +162,7 @@ The labs require Granite models to be served by an AI model runtime so that the 
 
 1. Create a [Replicate](https://replicate.com/) account. You will need a [GitHub](https://github.com/) account to do this.
 
-1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the Granite models on the Replicate platform, use [this link](https://replicate.com/invites/a8717bfe-2f3d-4a52-88ed-1356231cdf03) to add a small amount of credit to your Replicate account.
+1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the Granite models on the Replicate platform, use [this link](https://replicate.fyi/ibm) to add a small amount of credit to your Replicate account.
 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
