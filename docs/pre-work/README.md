@@ -36,6 +36,24 @@ Running the lab notebooks locally on your computer requires the following steps:
 - Git
 - Python 3.11, 3.12, or 3.13
 
+/// tip | Installing Python
+
+If you don't have Python installed, or the installed version is not one of the versions supported by this workshop, you should consider installing and using the [`uv` tool](https://docs.astral.sh/uv/getting-started/installation/) to assist in installing the proper Python version.
+`uv` works on macOS, Linux, and Windows.
+Once `uv` is installed, you can install Python 3.13 with
+
+```shell
+uv python install --default 3.13
+```
+
+You can then update the shell configurations files to add the Python commands to the PATH.
+
+```shell
+uv python update-shell
+```
+
+///
+
 ### Clone the Workshop Repository
 
 Clone the workshop repo and cd into the repo directory.
@@ -101,18 +119,18 @@ Before installing dependencies and to avoid conflicts in your environment, it is
 
 1. Create virtual environment:
 
-    /// tab | venv
+    /// tab | uv
 
     ```shell
-    python3 -m venv --upgrade-deps --clear venv
+    uv venv --clear --seed --python 3.13 venv
     ```
 
     ///
 
-    /// tab | uv
+    /// tab | venv
 
     ```shell
-    uv venv --clear --seed venv
+    python3 -m venv --upgrade-deps --clear venv
     ```
 
     ///
@@ -125,18 +143,18 @@ Before installing dependencies and to avoid conflicts in your environment, it is
 
 1. Install Jupyter notebook in the virtual environment:
 
-    /// tab | venv
-
-    ```shell
-    python3 -m pip install --require-virtualenv notebook ipywidgets
-    ```
-
-    ///
-
     /// tab | uv
 
     ```shell
     uv pip install notebook ipywidgets
+    ```
+
+    ///
+
+    /// tab | venv
+
+    ```shell
+    python3 -m pip install --require-virtualenv notebook ipywidgets
     ```
 
     ///
