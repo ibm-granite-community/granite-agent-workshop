@@ -36,6 +36,24 @@ Running the lab notebooks locally on your computer requires the following steps:
 - Git
 - Python 3.11, 3.12, or 3.13
 
+/// tip | Installing Python
+
+If you don't have Python installed, or the installed version is not one of the versions supported by this workshop, you should consider installing and using the [`uv` tool](https://docs.astral.sh/uv/getting-started/installation/) to assist in installing the proper Python version.
+`uv` works on macOS, Linux, and Windows.
+Once `uv` is installed, you can install Python 3.13 with
+
+```shell
+uv python install --default 3.13
+```
+
+You can then update the shell configurations files to add the Python commands to the PATH.
+
+```shell
+uv python update-shell
+```
+
+///
+
 ### Clone the Workshop Repository
 
 Clone the workshop repo and cd into the repo directory.
@@ -55,7 +73,7 @@ The labs require Granite models to be served by an AI model runtime so that the 
 
 1. Create a [Replicate](https://replicate.com/) account. You will need a [GitHub](https://github.com/) account to do this.
 
-1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the models on the Replicate platform, use [this link](https://replicate.com/invites/a8717bfe-2f3d-4a52-88ed-1356231cdf03) to add a small amount of credit to your Replicate account.
+1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the models on the Replicate platform, use [this link](https://replicate.fyi/ibm) to add a small amount of credit to your Replicate account.
 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
@@ -81,6 +99,18 @@ Ollama is a lightweight tool for running LLMs locally from the command line.
 
 3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
+For the best local inference experience, please see the following hardware recommendations.
+
+| Component | Minimum | Recommended |
+| ----------- | --------- | ------------- |
+| RAM | 8 GB | 16+ GB |
+| GPU VRAM | - | 4+ GB |
+| Storage | 10 GB free | 20+ GB free |
+
+/// tip | Apple Silicon
+If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
+///
+
 ### Install Jupyter
 
 /// note | Use a virtual environment
@@ -89,18 +119,18 @@ Before installing dependencies and to avoid conflicts in your environment, it is
 
 1. Create virtual environment:
 
-    /// tab | venv
+    /// tab | uv
 
     ```shell
-    python3 -m venv --upgrade-deps --clear venv
+    uv venv --clear --seed --python 3.13 venv
     ```
 
     ///
 
-    /// tab | uv
+    /// tab | venv
 
     ```shell
-    uv venv --clear --seed venv
+    python3 -m venv --upgrade-deps --clear venv
     ```
 
     ///
@@ -113,18 +143,18 @@ Before installing dependencies and to avoid conflicts in your environment, it is
 
 1. Install Jupyter notebook in the virtual environment:
 
-    /// tab | venv
-
-    ```shell
-    python3 -m pip install --require-virtualenv notebook ipywidgets
-    ```
-
-    ///
-
     /// tab | uv
 
     ```shell
     uv pip install notebook ipywidgets
+    ```
+
+    ///
+
+    /// tab | venv
+
+    ```shell
+    python3 -m pip install --require-virtualenv notebook ipywidgets
     ```
 
     ///
@@ -144,10 +174,6 @@ Running the lab notebooks remotely using [Google Colab](https://colab.research.g
 - [Colab Prerequisites](#colab-prerequisites)
 - [Serving the Granite AI Models for Colab](#serving-the-granite-ai-models-for-colab)
 
-/// tip | Notebook execution speed tip
-The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime->Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
-///
-
 ### Colab Prerequisites
 
 - [Google Colab](https://colab.research.google.com) requires a Google account that you're logged into.
@@ -162,22 +188,8 @@ The labs require Granite models to be served by an AI model runtime so that the 
 
 1. Create a [Replicate](https://replicate.com/) account. You will need a [GitHub](https://github.com/) account to do this.
 
-1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the Granite models on the Replicate platform, use [this link](https://replicate.com/invites/a8717bfe-2f3d-4a52-88ed-1356231cdf03) to add a small amount of credit to your Replicate account.
+1. Add credit to your Replicate Account (optional). To remove a barrier to entry to try the Granite models on the Replicate platform, use [this link](https://replicate.fyi/ibm) to add a small amount of credit to your Replicate account.
 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
 1. Add your Replicate API Token to the Colab Secrets manager to securely store it. Open [Google Colab](https://colab.research.google.com) and click on the 🔑 Secrets tab in the left panel. Click "New Secret" and enter `REPLICATE_API_TOKEN` as the key, and paste your token into the value field. Toggle the button on the left to allow notebook access to the secret.
-
-### Hardware Recommendations
-
-For the best local inference experience:
-
-| Component | Minimum | Recommended |
-| ----------- | --------- | ------------- |
-| RAM | 8 GB | 16+ GB |
-| GPU VRAM | - | 4+ GB |
-| Storage | 10 GB free | 20+ GB free |
-
-/// tip | Apple Silicon
-If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
-///
