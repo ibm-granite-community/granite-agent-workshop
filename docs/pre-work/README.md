@@ -81,6 +81,18 @@ Ollama is a lightweight tool for running LLMs locally from the command line.
 
 3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
 
+For the best local inference experience, please see the following hardware recommendations.
+
+| Component | Minimum | Recommended |
+| ----------- | --------- | ------------- |
+| RAM | 8 GB | 16+ GB |
+| GPU VRAM | - | 4+ GB |
+| Storage | 10 GB free | 20+ GB free |
+
+/// tip | Apple Silicon
+If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
+///
+
 ### Install Jupyter
 
 /// note | Use a virtual environment
@@ -167,17 +179,3 @@ The labs require Granite models to be served by an AI model runtime so that the 
 1. Create a Replicate [API Token](https://replicate.com/account/api-tokens).
 
 1. Add your Replicate API Token to the Colab Secrets manager to securely store it. Open [Google Colab](https://colab.research.google.com) and click on the 🔑 Secrets tab in the left panel. Click "New Secret" and enter `REPLICATE_API_TOKEN` as the key, and paste your token into the value field. Toggle the button on the left to allow notebook access to the secret.
-
-### Hardware Recommendations
-
-For the best local inference experience:
-
-| Component | Minimum | Recommended |
-| ----------- | --------- | ------------- |
-| RAM | 8 GB | 16+ GB |
-| GPU VRAM | - | 4+ GB |
-| Storage | 10 GB free | 20+ GB free |
-
-/// tip | Apple Silicon
-If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
-///
