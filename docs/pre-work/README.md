@@ -89,6 +89,23 @@ If you want to run the AI models locally on your computer, you can use [Ollama](
 
 Ollama is a lightweight tool for running LLMs locally from the command line.
 
+You will need to have a computer with:
+
+- GPU processor
+- At least 32GB RAM, preferably more
+
+/// note | Tested system
+This was tested on a MacBook with an M1 processor and 32GB RAM. It maybe possible to serve models with a CPU and less memory.
+///
+
+/// tip | Apple Silicon
+If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
+///
+
+If you computer is unable to serve the models, then it is recommended to go to the [Replicate AI Cloud Platform](#replicate-ai-cloud-platform) section instead.
+
+Running Ollama locally on your computer requires the following steps:
+
 1. Download and install [Ollama](https://ollama.com/download) for your platform.
 
 2. Pull the Granite model:
@@ -98,18 +115,6 @@ Ollama is a lightweight tool for running LLMs locally from the command line.
     ```
 
 3. Ollama runs automatically and exposes an OpenAI-compatible API at <http://localhost:11434>
-
-For the best local inference experience, please see the following hardware recommendations.
-
-| Component | Minimum | Recommended |
-| ----------- | --------- | ------------- |
-| RAM | 8 GB | 16+ GB |
-| GPU VRAM | - | 4+ GB |
-| Storage | 10 GB free | 20+ GB free |
-
-/// tip | Apple Silicon
-If you have a Mac with Apple Silicon (M1/M2/M3), Ollama can leverage the Metal GPU for accelerated inference.
-///
 
 ### Install Jupyter
 
