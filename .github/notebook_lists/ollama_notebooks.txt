@@ -4,5 +4,5 @@ notebooks/ReAct_Agent.ipynb
 notebooks/Route_and_Solve_Agent.ipynb
 notebooks/ToolRAG_Agent.ipynb
 
-# Too many conversation turns for ibm/granite4:micro
+# Too many conversation turns for granite4.1:3b
 # notebooks/Plan_Solve_Agent.ipynb
