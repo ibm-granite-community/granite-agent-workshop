@@ -4,5 +4,5 @@ notebooks/ReAct_Agent.ipynb
 notebooks/Route_and_Solve_Agent.ipynb
 notebooks/ToolRAG_Agent.ipynb
 
-# Too many conversation turns for ibm/granite4:micro
+# Uses granite4.1:8b which is too big for github runner
 # notebooks/Plan_Solve_Agent.ipynb
