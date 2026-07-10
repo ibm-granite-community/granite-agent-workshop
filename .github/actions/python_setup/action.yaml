@@ -5,21 +5,17 @@ inputs:
   python-version:
     description: 'Python version, supporting MAJOR.MINOR only'
     required: true
-    type: string
   uv-version:
     description: 'uv version, default latest'
     required: false
-    type: string
     default: 'latest'
   enable-cache:
     description: 'Enable caching uv cache, default true'
     required: false
-    type: boolean
-    default: true
+    default: 'true'
   save-cache:
     description: 'Save the uv cache, false if pull_request'
     required: false
-    type: boolean
     default: ${{ github.event_name != 'pull_request' }}
 
 runs:
