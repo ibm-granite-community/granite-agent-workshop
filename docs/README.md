@@ -8,9 +8,13 @@ logo: images/ibm-blue-background.png
 
 In this session you will build, test and observe AI agents using the open-source [IBM Granite](https://ibm.com/agent) models.
 
-An agent is a large language model that is associated with a set of capabilities and a reasoning loop has been given tools and a loop: it decides which tool to call, your code runs it, the result goes back to the model, and the cycle repeats until the task is done. Everything you build today is a variation on that idea.
+An agent is a system in which a large language model directs its own work. The model chooses which tools to call, your code executes them and returns the results, and the model uses what it learns to choose its next step, repeating until it decides the task is complete.
 
-You will work through recipes from the [Granite Agent Cookbook](https://github.com/ibm-granite-community/granite-agent-cookbook) as Jupyter notebooks, on the lab workstation, on your own machine, or in Google Colab. You start with a simple Function Calling agent, then work through Plan-and-Solve, Route-and-Solve, ToolRAG and ReAct, learning when each pattern is worth its latency and token cost. You then instrument an agent with Langfuse so you can see every model call and tool call it makes.
+The code that runs this loop is the harness. It sends messages to the model, executes the tools it requests, manages context, and decides when to stop. Skills are packaged instructions the agent loads only when a task needs them, teaching it how to do specific work well.
+
+In short: the model provides judgment, tools provide actions, skills provide know-how, and the harness ties them together.
+
+You will work through recipes from the [Granite Agent Cookbook](https://github.com/ibm-granite-community/granite-agent-cookbook) as Jupyter notebooks, on the lab workstation, on your own machine, or in Google Colab. The workshop follows the [agent lifecycle](https://www.ibm.com/think/topics/agent-lifecycle-management): you **build** agents, choosing the architecture (Function Calling, Plan-and-Solve, Route-and-Solve, ToolRAG or ReAct) that is worth its latency and token cost; **observe** them with Langfuse so every model call and tool call is traced; **test and evaluate** both their trajectories and their final answers; and **operationalize** them by packaging an agent so other applications can call it.
 
 /// tip | Getting started at the workshop
 Your workstation is ready: nothing needs to be installed. Follow the five steps in [At the workshop](pre-work/README.md#at-the-workshop), then start with [1. Access the Model](part-01-access-the-model/README.md).
@@ -34,7 +38,7 @@ Once an agent leaves your notebook, print statements stop being an option. This 
 
 ### 4. Testing Agents
 
-How to evaluate your agents with a structured test framework. Agents fail differently from ordinary software: the output can be fluent, confident and wrong, and the same input can take a different path on a different day. This part covers testing the trajectory as well as the final answer, single-turn and multi-turn test cases, and summary metrics you can track on every change.
+How to evaluate your agents with a structured test framework. Agents fail differently from ordinary software: the output can be fluent, confident and wrong, and the same input can take a different path on a different day. This part covers testing the trajectory as well as the final answer, single-turn and multi-turn test cases, and using an LLM-as-a-judge to score answers where an exact-match check is not enough. Correctness is only half the picture: because an agent is a loop, cost and latency compound with every step, so you also measure and reduce its non-functional requirements (token cost, latency, throughput, memory and energy footprint) and track them alongside quality on every change.
 
 ### 5. Packaging Agents
 
