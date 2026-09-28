@@ -25,7 +25,7 @@ The 8B and 30B models also received additional agentic reinforcement learning fo
 | Model | Parameters | Context | Typical role |
 | :--- | :--- | :--- | :--- |
 | [`granite-4.2-3b`](https://huggingface.co/ibm-granite/granite-4.2-3b) | 3B | 128K | Fast, local iteration (this workshop's Ollama default) |
-| [`granite-4.2-8b`](https://huggingface.co/ibm-granite/granite-4.2-8b) | 8B | 128K | General-purpose enterprise agent work (this workshop's Replicate fallback) |
+| [`granite-4.2-8b`](https://huggingface.co/ibm-granite/granite-4.2-8b) | 8B | 128K | General-purpose enterprise agent work (this workshop's Replicate model) |
 | [`granite-4.2-30b`](https://huggingface.co/ibm-granite/granite-4.2-30b) | 30B | 128K, extendable to 512K | Flagship reasoning, long-context agentic workflows |
 
 All three natively support a 128K-token context window, and the 30B model has a documented long-context extension to 512K. All three also support tool calling and 12 languages (including English, German, Spanish, French, and Japanese).
@@ -34,8 +34,8 @@ All three natively support a 128K-token context window, and the 30B model has a 
 
 Every notebook defines the same `get_llm()` helper, which picks the model for you instead of hardcoding a model name:
 
-- **Ollama (local, default):** `granite4.2:3b`, overridable with the `GRANITE_MODEL` environment variable.
-- **Replicate (hosted fallback):** `ibm-granite/granite-4.2-8b`, overridable with the `REPLICATE_MODEL` environment variable.
+- **Replicate (hosted):** `ibm-granite/granite-4.2-8b`, overridable with the `REPLICATE_MODEL` environment variable. Used whenever `REPLICATE_API_TOKEN` is set in the environment, and as the fallback when Ollama doesn't have the model.
+- **Ollama (local):** `granite4.2:3b`, overridable with the `GRANITE_MODEL` environment variable. Used when no `REPLICATE_API_TOKEN` is set and the model is pulled locally.
 
 The Replicate path also sets `chat_template_kwargs: {"enable_thinking": False}`, so this workshop runs Granite in non-thinking mode by default -- the labs are about the mechanics of an agent loop (tool calls, routing, retrieval), not about reading a model's chain of thought. If you want to see Granite's reasoning step for yourself, try flipping `enable_thinking` to `True` and re-running a notebook.
 

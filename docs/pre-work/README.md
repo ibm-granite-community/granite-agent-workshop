@@ -6,11 +6,11 @@ logo: images/ibm-blue-background.png
 
 # Pre-work
 
-The labs in the workshop are [Jupyter notebooks](https://jupyter.org/). You can run them on the TechXchange lab workstation, on your own computer, or remotely on the [Google Colab](https://colab.research.google.com) service.
+The labs in the workshop are [Jupyter notebooks](https://jupyter.org/). You can run them on the workshop workstation, on your own computer, or remotely on the [Google Colab](https://colab.research.google.com) service.
 
-## At the TechXchange lab
+## At the workshop
 
-If you are in the Lab 1538 session, your workstation is already set up: the Python environment, the notebooks and access to the Granite models are in place, so **you can skip the rest of this page** apart from the Langfuse step below.
+If you are attending the workshop, your workstation is already set up: the Python environment, the notebooks and access to the Granite models are in place, so **you can skip the rest of this page** apart from the Langfuse step below.
 
 1. Keep this website open in a browser tab for the whole session.
 2. Open a terminal and start JupyterLab from the workshop directory:
@@ -22,7 +22,7 @@ If you are in the Lab 1538 session, your workstation is already set up: the Pyth
 
 3. In JupyterLab, open the `notebooks` folder. The notebooks are numbered in the order you will run them.
 4. Run the first cell of any notebook to confirm the kernel starts. If it fails, raise your hand now rather than during the first part.
-5. Before the [Observing Agents](../part-04-observing-agents/README.md) lab, add your Langfuse keys to `.env` as described in [Setting up Langfuse](#setting-up-langfuse-for-the-observing-agents-lab). Langfuse is already running on the workstation at <http://localhost:3000>.
+5. Before the [Observing Agents](../part-03-observing-agents/README.md) lab, add your Langfuse keys to `.env` as described in [Setting up Langfuse](#setting-up-langfuse-for-the-observing-agents-lab). Langfuse is already running on the workstation at <http://localhost:3000>.
 
 ## Running the Notebooks
 
@@ -225,7 +225,7 @@ The labs require Granite models to be served by an AI model runtime so that the 
 
 ## Setting up Langfuse (for the Observing Agents lab)
 
-The [Observing Agents](../part-04-observing-agents/README.md) lab needs a [Langfuse](https://langfuse.com) project. You don't need this for the earlier labs -- come back to this section when you get there.
+The [Observing Agents](../part-03-observing-agents/README.md) lab needs a [Langfuse](https://langfuse.com) project. You don't need this for the earlier labs -- come back to this section when you get there.
 
 /// tab | Lab workstation
 

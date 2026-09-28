@@ -1,8 +1,8 @@
 ---
-title: 4. Observing Agents
+title: 3. Observing Agents
 description: Instrument an agent and read a trace with Langfuse
 logo: images/ibm-blue-background.png
-notebook: notebooks/03_observability.ipynb
+notebook: notebooks/02_Agent_Tracing_Observability.ipynb
 ---
 
 # Agent Observability with Langfuse
@@ -37,7 +37,7 @@ Once you have access to a Langfuse project:
 
 ## Prerequisites
 
-This lab is a [Jupyter notebook](https://jupyter.org/). At the TechXchange lab, your workstation is already set up: there is nothing to install. To run it on your own machine or in Colab, complete the [pre-work](../pre-work/README.md) first. The notebook is self-contained, but it helps to complete [2.1 Function Calling Agent](../part-02-building-agents/function-calling.md) first, because this lab instruments the same agent.
+This lab is a [Jupyter notebook](https://jupyter.org/). At the workshop, your workstation is already set up: there is nothing to install. To run it on your own machine or in Colab, complete the [pre-work](../pre-work/README.md) first. The notebook is self-contained, but it helps to complete [2.1 Function Calling Agent](../part-02-building-agents/function-calling.md) first, because this lab instruments the same agent.
 
 ## Lab
 
@@ -48,7 +48,7 @@ Open the notebook in the way that matches where you are working:
 
 /// tab | Lab workstation
 
-In JupyterLab, open `{{ notebook }}` from the file browser. If JupyterLab isn't running yet, see [At the TechXchange lab](../pre-work/README.md#at-the-techxchange-lab).
+In JupyterLab, open `{{ notebook }}` from the file browser. If JupyterLab isn't running yet, see [At the workshop](../pre-work/README.md#at-the-workshop).
 
 ///
 

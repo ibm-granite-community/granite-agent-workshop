@@ -23,8 +23,13 @@ nav:
       - 2.3 Route-and-Solve Agent: part-02-building-agents/route-and-solve.md
       - 2.4 ToolRAG Agent: part-02-building-agents/toolrag.md
       - 2.5 ReAct Agent: part-02-building-agents/react.md
-    - 3. Testing Agents: part-03-testing-agents/README.md
-    - 4. Observing Agents: part-04-observing-agents/README.md
+      - 2.6 Context Engineering: part-02-building-agents/context-engineering.md
+      - 2.7 Agent Harnesses: part-02-building-agents/agent-harnesses.md
+    - 3. Observing Agents: part-03-observing-agents/README.md
+    - 4. Testing Agents:
+      - Overview: part-04-testing-agents/README.md
+      - 4.1 Functional Testing: part-04-testing-agents/functional-testing.md
+      - 4.2 Non-Functional Testing: part-04-testing-agents/non-functional-testing.md
     - 5. Packaging Agents: part-05-packaging-agents/README.md
   - References:
     - Building Agents with Granite - From Prototype to Production: https://github.com/ibm-granite-community/granite-agent-cookbook/blob/main/building_agents.md

@@ -41,7 +41,7 @@ Plan-and-Solve needs the larger `granite4.2:8b` model. The notebook uses it from
 
 ## Prerequisites
 
-This lab is a [Jupyter notebook](https://jupyter.org/). At the TechXchange lab, your workstation is already set up: there is nothing to install. To run it on your own machine or in Colab, complete the [pre-work](../pre-work/README.md) first.
+This lab is a [Jupyter notebook](https://jupyter.org/). At the workshop, your workstation is already set up: there is nothing to install. To run it on your own machine or in Colab, complete the [pre-work](../pre-work/README.md) first.
 
 ## Lab
 
@@ -52,7 +52,7 @@ Open the notebook in the way that matches where you are working:
 
 /// tab | Lab workstation
 
-In JupyterLab, open `{{ notebook }}` from the file browser. If JupyterLab isn't running yet, see [At the TechXchange lab](../pre-work/README.md#at-the-techxchange-lab).
+In JupyterLab, open `{{ notebook }}` from the file browser. If JupyterLab isn't running yet, see [At the workshop](../pre-work/README.md#at-the-workshop).
 
 ///
 

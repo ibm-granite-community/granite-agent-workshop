@@ -1,19 +1,19 @@
 ---
 title: Building Efficient AI Agents with IBM Granite
-description: Building Efficient AI Agents with IBM Granite -- IBM TechXchange Lab 1538
+description: Building Efficient AI Agents with IBM Granite -- Workshop
 logo: images/ibm-blue-background.png
 ---
 
 ## Introduction
 
-Welcome to IBM TechXchange Lab 1538. In this session you will build, test and observe AI agents using the open-source [IBM Granite](about-granite.md) 4.2 models.
+In this session you will build, test and observe AI agents using the open-source [IBM Granite](https://ibm.com/agent) models.
 
-An agent is a large language model that has been given tools and a loop: it decides which tool to call, your code runs it, the result goes back to the model, and the cycle repeats until the task is done. Everything you build today is a variation on that idea.
+An agent is a large language model that is associated with a set of capabilities and a reasoning loop has been given tools and a loop: it decides which tool to call, your code runs it, the result goes back to the model, and the cycle repeats until the task is done. Everything you build today is a variation on that idea.
 
 You will work through recipes from the [Granite Agent Cookbook](https://github.com/ibm-granite-community/granite-agent-cookbook) as Jupyter notebooks, on the lab workstation, on your own machine, or in Google Colab. You start with a simple Function Calling agent, then work through Plan-and-Solve, Route-and-Solve, ToolRAG and ReAct, learning when each pattern is worth its latency and token cost. You then instrument an agent with Langfuse so you can see every model call and tool call it makes.
 
-/// tip | Getting started at the TechXchange lab
-Your workstation is ready: nothing needs to be installed. Follow the five steps in [At the TechXchange lab](pre-work/README.md#at-the-techxchange-lab), then start with [1. Access the Model](part-01-access-the-model/README.md).
+/// tip | Getting started at the workshop
+Your workstation is ready: nothing needs to be installed. Follow the five steps in [At the workshop](pre-work/README.md#at-the-workshop), then start with [1. Access the Model](part-01-access-the-model/README.md).
 ///
 
 New to Granite? See [About Granite](about-granite.md) for a primer on the model family and the Granite 4.2 models this workshop runs on.
@@ -28,13 +28,13 @@ Connect to a Granite model, either on a local Ollama server or hosted on Replica
 
 Five agent architectures, each in its own self-contained notebook. You start with a **Function Calling** agent, then work through **Plan-and-Solve**, **Route-and-Solve**, **ToolRAG** and **ReAct**, learning when each pattern is worth its extra latency and token cost.
 
-### 3. Testing Agents
-
-How to evaluate your agents and build an eval harness. Agents fail differently from ordinary software: the output can be fluent, confident and wrong, and the same input can take a different path on a different day. This part covers testing the trajectory as well as the final answer, scoring answers with LLM-as-a-Judge, and running it all on every change.
-
-### 4. Observing Agents
+### 3. Observing Agents
 
 Once an agent leaves your notebook, print statements stop being an option. This part covers instrumenting an agent with Langfuse so that every model call and tool call is recorded as a trace you can search, cost and analyze.
+
+### 4. Testing Agents
+
+How to evaluate your agents with a structured test framework. Agents fail differently from ordinary software: the output can be fluent, confident and wrong, and the same input can take a different path on a different day. This part covers testing the trajectory as well as the final answer, single-turn and multi-turn test cases, and summary metrics you can track on every change.
 
 ### 5. Packaging Agents
 
@@ -58,15 +58,18 @@ There is deliberately more material here than most people finish in the 90-minut
 | Part | Lab | Description | Status |
 | :--- | :--- | :--- | :--- |
 | Pre-work | [Pre-work](pre-work/README.md) | Set up your environment | ✅ |
-| 1. Access the Model | [1. Access the Model](part-01-access-the-model/README.md) | Connect to Granite and run a first prompt | ✅ |
-| 2. Building Agents | [2.1 Function Calling Agent](part-02-building-agents/function-calling.md) | The model selects tools, your program runs them | ✅ |
-| 2. Building Agents | [2.2 Plan-and-Solve Agent](part-02-building-agents/plan-and-solve.md) | Plan the steps up front, execute, replan | ✅ |
-| 2. Building Agents | [2.3 Route-and-Solve Agent](part-02-building-agents/route-and-solve.md) | Route each query to a specialized subagent | ✅ |
-| 2. Building Agents | [2.4 ToolRAG Agent](part-02-building-agents/toolrag.md) | Retrieve the relevant tools before calling the model | ✅ |
-| 2. Building Agents | [2.5 ReAct Agent](part-02-building-agents/react.md) | Interleave reasoning with tool calls | ✅ |
-| 3. Testing Agents | [3. Testing Agents](part-03-testing-agents/README.md) | Trajectory tests, LLM-as-a-Judge, eval harness | 🚧 Coming soon |
-| 4. Observing Agents | [4. Observing Agents](part-04-observing-agents/README.md) | Instrument an agent and read a trace with Langfuse | ✅ |
-| 5. Packaging Agents | [5. Packaging Agents](part-05-packaging-agents/README.md) | Package an agent so other applications can call it | 🚧 Coming soon |
+| Access the Model | [1. Access the Model](part-01-access-the-model/README.md) | Connect to Granite and run a first prompt | ✅ |
+| Building Agents | [2.1 Function Calling Agent](part-02-building-agents/function-calling.md) | The model selects tools, your program runs them | ✅ |
+| | [2.2 Plan-and-Solve Agent](part-02-building-agents/plan-and-solve.md) | Plan the steps up front, execute, replan | ✅ |
+| | [2.3 Route-and-Solve Agent](part-02-building-agents/route-and-solve.md) | Route each query to a specialized subagent | ✅ |
+| | [2.4 ToolRAG Agent](part-02-building-agents/toolrag.md) | Retrieve the relevant tools before calling the model | ✅ |
+| | [2.5 ReAct Agent](part-02-building-agents/react.md) | Interleave reasoning with tool calls | ✅ |
+| | [2.6 Context Engineering](part-02-building-agents/context-engineering.md) | Keep the context window focused as conversations and tool lists grow | 🚧 Notebook coming soon |
+| | [2.7 Agent Harnesses](part-02-building-agents/agent-harnesses.md) | Agent loops, preset harnesses (Pi, OpenCode, Hermes) and Agent Skills | 🚧 Notebook coming soon |
+| Observing Agents | [3. Observing Agents](part-03-observing-agents/README.md) | Instrument an agent and read a trace with Langfuse | ✅ |
+| Testing Agents | [4.1 Functional Testing](part-04-testing-agents/functional-testing.md) | Trajectory and response tests, multi-turn tests, summary metrics, LLM-as-a-Judge | ✅ |
+| | [4.2 Non-Functional Testing](part-04-testing-agents/non-functional-testing.md) | Latency, cost, robustness and consistency | 🚧 Coming soon |
+| Packaging Agents | [5. Packaging Agents](part-05-packaging-agents/README.md) | Package an agent so other applications can call it | 🚧 Coming soon |
 
 ### Technology Used
 
