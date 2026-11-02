@@ -1,8 +1,10 @@
 # Notebooks to test
-notebooks/Function_Calling_Agent.ipynb
-notebooks/ReAct_Agent.ipynb
-notebooks/Route_and_Solve_Agent.ipynb
-notebooks/ToolRAG_Agent.ipynb
+notebooks/00_access_the_model.ipynb
+notebooks/01_Function_Calling_Agent.ipynb
+notebooks/01_ReAct_Agent.ipynb
+notebooks/01_Route_and_Solve_Agent.ipynb
+notebooks/01_ToolRAG_Agent.ipynb
+notebooks/03_Agent_Evaluation_TDD.ipynb
 
 # Uses granite4.2:8b which is too big for github runner
-# notebooks/Plan_Solve_Agent.ipynb
+# notebooks/01_Plan_Solve_Agent.ipynb
