@@ -1,0 +1,38 @@
+[project]
+name = "granite-agent-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "a2a-sdk[http-server]>=1.2.2,<2",
+    "grandalf>=0.8",
+    "httpx>=0.28.1",
+    "ibm-granite-community-utils @ git+https://github.com/ibm-granite-community/utils.git",
+    "jupyterlab>=4.6.3",
+    "langchain>=1.4.3",
+    "langchain-huggingface>=1.2.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-replicate @ git+https://github.com/ibm-granite-community/langchain-replicate.git",
+    "langfuse>=4.15.4",
+    "langgraph>=1.2.11",
+    "matplotlib>=3.11.2",
+    "mcp>=1.30.0,<2",
+    "pandas>=3.0.6",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+    "rouge-score>=0.1.2",
+    "seaborn>=0.13.2",
+    "sentence-transformers>=6.1.0",
+    "starlette>=1.7.0",
+    "uvicorn>=0.54.0",
+]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+# The workshop ships notebooks and docs, not an importable package: install dependencies only.
+[tool.setuptools]
+packages = []

@@ -1,28 +1,50 @@
 # Project information
-site_name: Building Agents with Granite Workshop
+site_name: "Building Efficient AI Agents with IBM Granite"
 site_url: https://ibm-granite-community.github.io/granite-agent-workshop
 site_author: IBM Research
 
 # Repository
 repo_name: granite-agent-workshop
-repo_url: https://github.com/ibm-granite-community/granite-agent-workshop
-edit_uri: edit/main/docs
+repo_url: https://github.com/jslecointre/granite-agent-workshop
+edit_uri: edit/tx-26-lab/docs
 
 # Navigation
 nav:
   - Welcome:
     - About the workshop: README.md
+    - About Granite: about-granite.md
   - Workshop:
-    - Lab 0. Pre-work: pre-work/README.md
-    - Lab 1. Function Calling Agent: lab-1/README.md
-    - Lab 2. Plan-and-Solve Agent: lab-2/README.md
-    - Lab 3. Route-and-Solve Agent: lab-3/README.md
-    - Lab 4. ToolRAG Agent: lab-4/README.md
-    - Lab 5. ReAct Agent: lab-5/README.md
+    - Getting Started: getting-started/README.md
+    - 1. Access the Model: part-01-access-the-model/README.md
+    - 2. Building Agents:
+      - Overview: part-02-building-agents/README.md
+      - 2.1 Function Calling Agent: part-02-building-agents/function-calling.md
+      - 2.2 Plan-and-Solve Agent: part-02-building-agents/plan-and-solve.md
+      - 2.3 Route-and-Solve Agent: part-02-building-agents/route-and-solve.md
+      - 2.4 ToolRAG Agent: part-02-building-agents/toolrag.md
+      - 2.5 ReAct Agent: part-02-building-agents/react.md
+      - 2.6 Agent Harnesses: part-02-building-agents/agent-harness.md
+    - 3. Observing Agents: part-03-observing-agents/README.md
+    - 4. Testing Agents: part-04-testing-agents/README.md
+    - 5. Packaging Agents:
+      - Overview: part-05-packaging-agents/README.md
+      - 5.1 Packaging Tools with MCP: part-05-packaging-agents/mcp.md
+      - 5.2 Packaging Agents with A2A: part-05-packaging-agents/a2a.md
+    - 6. Advanced Agent Topics:
+      - Overview: part-06-advanced-topics/README.md
+      - 6.1 Context Engineering: part-06-advanced-topics/context-engineering.md
+      - 6.2 Agent Security: part-06-advanced-topics/agent-security.md
+      - 6.3 Small Language Models: part-06-advanced-topics/slms.md
   - References:
     - Building Agents with Granite - From Prototype to Production: https://github.com/ibm-granite-community/granite-agent-cookbook/blob/main/building_agents.md
+    - Testing agents: https://github.com/ibm-granite-community/granite-agent-cookbook/blob/main/testing_agents.md
+    - CI/CD for agentic development: https://github.com/ibm-granite-community/granite-agent-cookbook/blob/main/cicd_agent-dev-blog.md
 
 
+
+# Open content links in a new tab
+extra_javascript:
+  - javascripts/new-tab.js
 
 ## DO NOT CHANGE BELOW THIS LINE
 
@@ -72,7 +94,8 @@ extra:
       link: https://www.youtube.com/user/developerworks
     - icon: fontawesome/brands/dev
       link: https://dev.to/ibmdeveloper
-  colab_url: https://colab.research.google.com/github/ibm-granite-community/granite-agent-workshop
+  colab_url: https://colab.research.google.com/github/jslecointre/granite-agent-workshop
+  repo_branch: tx-26-lab
 
 # Extensions
 markdown_extensions:
