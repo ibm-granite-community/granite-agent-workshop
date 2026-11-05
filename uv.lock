@@ -988,7 +988,7 @@ requires-dist = [
     { name = "langfuse", specifier = ">=4.15.4" },
     { name = "langgraph", specifier = ">=1.2.11" },
     { name = "matplotlib", specifier = ">=3.11.2" },
-    { name = "mcp", specifier = ">=1.30.0" },
+    { name = "mcp", specifier = ">=1.30.0,<2" },
     { name = "pandas", specifier = ">=3.0.6" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "rich", specifier = ">=15.0.0" },
